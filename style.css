@@ -1,0 +1,128 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    }
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #3ca7ee, #9b408f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 32px 40px 0;
+}
+
+.app__title {
+    width: 100%;
+    font-size: 3.2rem;
+    line-height: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.form__input-control {
+    width: 100%;
+    position: relative;
+    margin: 42px 0;
+}
+
+.form__input-control input {
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    color: #000;
+    border-bottom: 2px solid #b7b7b7;
+}
+
+.form__input-control  span {
+    position: absolute;
+    border-bottom: 2px solid #3f93d1;
+    width: 0%;
+    top: 100%;
+    transform: translateY(-62%);
+    left: 0;
+    transition: 0.2s;
+}
+
+.form__input-control input:focus ~ span {
+    width: 100%;
+}
+
+.form__input-control.error span {
+    width: 100%;
+    border-bottom: 2px solid #e74c3c;
+}
+
+
+.form__input-control small {
+    display: none;
+}
+
+.form__input-control.error  small {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 0;
+    top: 100%;
+    transform: translateY(40%);
+    color: #e74c3c;
+    display: block;
+}
+
+
+.form__login {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    background-color: #2691d9;
+    text-align: center;
+    border-radius: 32px;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.form__login:hover {
+    background-color: #08609a;
+}
+
+.form__help {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.7rem;
+    color: #737473;
+}
+
+
+
+.form__help a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #2b94df;
+}
+
+.form__help a:hover {
+    text-decoration-line: underline;
+}
